@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Simon</title>
+        
+        <script src="static/game.js"></script>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+    </head>
+    <body>
+        <!--Start Page-->
+        <h1 id="title">Simon</h1>
+        <button id="start" onclick="changeScreen()">START</button>
+        
+        <!--Game Page-->
+        <div id="game-elems">
+            <h2 class="game-screen" id="game-message">Prepare to play...</h2><br>
+            <div id="game-info">
+                <p class="game-screen" id="level">Level: 1</p>
+                <p class="game-screen" id="maxlevel">Max Level: 1</p>
+                <p class="game-screen" id="lives">Lives: 3</p>
+            </div>
+            <div>
+                <button class="simon game-screen" id="green"></button>
+                <button class="simon game-screen" id="yellow"></button>
+                <button class="simon game-screen" id="red"></button>
+                <button class="simon game-screen" id="blue"></button>
+            </div>
+        </div>
+    </body>
+</html>

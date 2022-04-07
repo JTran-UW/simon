@@ -1,0 +1,157 @@
+@font-face {
+    font-family: ShareTech;
+    src: url(ShareTech-Regular.ttf);
+}
+
+body {
+    font-family: ShareTech;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+/**
+* Home screen
+*/
+
+#title {
+    font-size: 150px;
+}
+
+#start {
+    padding: 30px 60px;
+    font-family: ShareTech;
+    font-size: 25px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 100px;
+    cursor: pointer;
+    background-color: #d1d1d1;
+    transition: 0.3s;
+    box-shadow: 1px 1px 25px 1px #d1d1d1;
+}
+
+#start:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 25px 5px #d1d1d1;
+}
+
+#start:active {
+    background-color: #acacac;
+}
+
+/**
+* Game screen
+*/
+
+.game-screen {
+    display: none;
+    opacity: 0;
+}
+
+#game-elems {
+    width: 40%;
+    margin: 0px auto;
+}
+
+#game-elems * {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#game-elems h2 {
+    font-size: 40px;
+}
+
+#game-elems p {
+    font-size: 24px;
+}
+
+.simon {
+    padding: 50px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 15px 5px;
+    margin: 50px 0px;
+    transition: 0.3s;
+}
+
+.ready:hover {
+    box-shadow: 1px 1px 25px 5px;
+    cursor: pointer;
+}
+
+#green {
+    color: green;
+    background-color: green;
+}
+
+#yellow {
+    color: yellow;
+    background-color: yellow;
+}
+
+#red {
+    color: red;
+    background-color: red;
+}
+
+#blue {
+    color: blue;
+    background-color: blue;
+}
+
+/**
+* Results page
+*/
+
+#final-message {
+    margin-top: 20vh;
+    font-size: 40px;
+}
+
+/**
+* Keyframes animations
+*/
+
+.disappear {
+    animation: disappear 1s linear forwards;
+}
+
+.appear {
+    animation: appear 1s linear forwards;
+}
+
+.illuminate {
+    animation: illuminate 1s linear forwards;
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes illuminate {
+    0% {
+        box-shadow: 1px 1px 15px 5px;
+    }
+    45%, 55% {
+        box-shadow: 1px 1px 35px 20px;
+    }
+    100% {
+        box-shadow: 1px 1px 15px 5px;
+    }
+}

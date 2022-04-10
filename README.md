@@ -1,7 +1,7 @@
 # Simon
 
 ## Overview
-Simon was a simple game created with Flask and JS as a part of Computer Science IV. It's based on Simon, where an ever-growing series of four colors is displayed, and the player has to press the corresponding buttons in the right order.
+Simon was a simple game created with Flask and JS as a part of Computer Science IV.  It's based on the toy of the same name, where an ever-growing series of four colors is displayed, and the player has to press the corresponding buttons in the right order.
 
 ## Quickstart
 
